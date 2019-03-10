@@ -184,7 +184,8 @@ machine.
 2. Do you feel comfortable leaving this command running?  What would happen
    if someone else connected to this socket?
 
-
+*Note: This class is focused on python but [reverse shells can be spun up
+simply in a number of other languages](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)*
 
 ### Task 6 - Turns out Task 3 was not a waste of time...
 Because of some of the dangerous things that `nc` can do, most system
@@ -199,9 +200,11 @@ create a reverse tunnel.
 1. List the commands used to establish a reverse shell with `bhpnet.py` and how
    to connect to it with `nc`.  
 2. Does this shell differ at all from the previous reverse shell you created?
+   Why or why not?
 
 
-### Task 7
+### Task 7 - 
+
 
 
 ### Acknowledgement
