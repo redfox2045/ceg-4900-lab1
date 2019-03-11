@@ -1,4 +1,4 @@
-## Lab 1 - Making Connections...
+# Lab 1 - Making Connections...
 
 ### Introduction to the lab space
 The purpose of lab 0 is to familiarize yourself with the lab space we will be
@@ -181,6 +181,9 @@ machine.
    mkfifo /tmp/f
    cat /tmp/f | /bin/sh -i 2>&1 | nc -l 1234 >/tmp/f
    ```
+2. Would this be considered a reverse or a bind shell?
+3. What complications would there be in setting up a reverse shell from our AWS
+   system to your home PC?
 2. Do you feel comfortable leaving this command running?  What would happen
    if someone else connected to this socket?
 
@@ -195,7 +198,7 @@ ways to create a reverse or bind shell assuming there is a programming language
 installed with a `socket()` library (like python).
 
 Investigate the `code/bhpnet.py`, explain what it does.  Use `bhpnet.py` to
-create a reverse tunnel.
+create a bind shell.
 
 1. List the commands used to establish a reverse shell with `bhpnet.py` and how
    to connect to it with `nc`.  
@@ -203,8 +206,26 @@ create a reverse tunnel.
    Why or why not?
 
 
-### Task 7 - 
+### Task 7 - Proxies and tunnels
+As a pen tester (or attacker) you may not be interested in the system that you
+can execute commands/code on but that does not make it useless to you.  Instead
+of attempting to gain elevated privileges on a server, you can instead use it
+as a [proxy server](https://en.wikipedia.org/wiki/Proxy_server).
 
+Your AWS environment actually created two systems, so far you have been
+connecting to *Ubuntu Public* because it has a publicly accessible IP.
+
+Assume that the server you were really interested is on *Ubuntu Private*.
+You have the private IP of this server (10.0.0.30) but you have no route to
+this system.  Inspect `code/proxy.py` on *Ubuntu Public*.  Use proxy.py to 
+connect to *Ubuntu Private* over SSH from your local machine.
+
+1. Describe all *4* sockets used in this connection.  You do not yet have the
+   tools to identify all ports used in this connection, but you should be able
+   to identify most of them.
+2. List the commands you used and what sockets those commands created.
+3. Create the same proxy using `ssh -L`.  Describe the commands used and what
+   sockets they created.
 
 
 ### Acknowledgement
