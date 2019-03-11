@@ -82,7 +82,7 @@ perform the following:
   the blue AWS Console button.  
   
   This will launch the AWS console (may require two
-  clicks if you were laready signed in to AWS with your personal account) and sign
+  clicks if you were already signed in to AWS with your personal account) and sign
   you in as a federated user with a username looking like
   `vocstartsoft/user236529=lastname.number@wright.edu`.
 * Create a SSH key pair via AWS for signing in to your systems.  To do this
@@ -97,7 +97,7 @@ perform the following:
 * **Do not lose this private key.**  Doing so will prevent you from being
   able to access any labs created with it.  If you do lose it simply delete it
   from AWS and create a new one.
-* [Once you have created your SSH key, click here to provision lab0](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=CEG-4900Lab01&templateURL=https:%2F%2Fs3.amazonaws.com%2Fwsu-cecs-cf-templates%2Fceg4900lab1.yml)
+* [Once you have created your SSH key, click here to provision lab1](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=CEG-4900Lab01&templateURL=https:%2F%2Fs3.amazonaws.com%2Fwsu-cecs-cf-templates%2Fceg4900lab1.yml)
   This will take you to another AWS service called Cloud Formation (AWS CF).  The
   link will automatically fill most of the fields necessary, you will need to
   select the SSH key you just created from the drop down menu.  After selecting
@@ -127,7 +127,7 @@ MobaXterm perform the following actions:
 There are many tools and applications that allow you to create networked
 servers but at the heart of them all are sockets.  A *socket* is one endpoint
 in a two way communication link between two programs.
-The `code/tcp-client.py` is a simply python program that creates a client 
+The `code/tcp-client.py` is a simple python program that creates a client 
 socket.  Using this python program answer the following questions:
 
 1. What IP address and port is `tcp-client.py` connecting to?
@@ -135,14 +135,16 @@ socket.  Using this python program answer the following questions:
 3. Use `tcp-client.py` to make a connection over port 22 to the AWS instance at
    10.0.0.30.  What information did you recieve?
 
-   On the other end of the communication channel is the server.  `code/tcp-server.py`
-   is a simple tcp server program using the python `socket` libraries.  Use
-   `code/tcp-server.py` to answer the following questions:
+4. On the other end of the communication channel is the server.  The file 
+   `code/tcp-server.py` is a simple tcp server program using the python 
+   `socket` libraries.  What port is `tcp-server.py` connecting to?
 
-4. What port is `tcp-server.py` connecting to?
-5. Make the necessary changes to `tcp-client.py` so that it will connect to 
-   your `tcp-server.py` socket.  Describe the IP addresses and ports associated 
-   with both sockets associated with this connection.
+5. Execute `tcp-server.py` on your AWS Ubuntu Public system.
+   Make the necessary changes to `tcp-client.py` so that it will connect to 
+   your `tcp-server.py` socket from your local machine.  Connect to your AWS 
+   `tcp-server.py` socket with your local `tcp-client.py`.
+   Describe the IP addresses and ports associated with both sockets associated
+   with this connection.
 
 ### Task 4 - Simple sockets with Netcat
 Now that you have some experience working with sockets, research `netcat` 
@@ -188,7 +190,7 @@ machine.
    if someone else connected to this socket?
 
 *Note: This class is focused on python but [reverse shells can be spun up
-simply in a number of other languages](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)*
+in a number of other languages](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).*
 
 ### Task 6 - Turns out Task 3 was not a waste of time...
 Because of some of the dangerous things that `nc` can do, most system
