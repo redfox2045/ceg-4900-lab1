@@ -97,7 +97,7 @@ perform the following:
 * **Do not lose this private key.**  Doing so will prevent you from being
   able to access any labs created with it.  If you do lose it simply delete it
   from AWS and create a new one.
-* [Once you have created your SSH key, click here to provision lab0](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=CEG-4900Lab0&templateURL=https:%2F%2Fs3.amazonaws.com%2Fcf-templates-wylc6d3bougs-us-east-1%2Flab0.yml)
+* [Once you have created your SSH key, click here to provision lab0](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=CEG-4900Lab01&templateURL=https:%2F%2Fs3.amazonaws.com%2Fwsu-cecs-cf-templates%2Fceg4900lab1.yml)
   This will take you to another AWS service called Cloud Formation (AWS CF).  The
   link will automatically fill most of the fields necessary, you will need to
   select the SSH key you just created from the drop down menu.  After selecting
