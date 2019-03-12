@@ -70,14 +70,22 @@ Assuming you have registerd for AWS Educate and have access to this class
 perform the following:
 
 * [Sign in to AWS educate](https://www.awseducate.com/signin/SiteLogin),
-  go to the CEG 4900/6900 Cyber Security Analysis - Applied classroom, then click
-  the blue AWS Console button.  
+  * Click the yellow *My Classrooms* Button
+  * Click the blue *Go to classroom* button for *Cyber Security Analysis - Applied*
+  * Click the blue *AWS Console* button  
   
   This will launch the AWS console (may require two
-  clicks if you were already signed in to AWS with your personal account) and sign
-  you in as a federated user with a username looking like
+  clicks if you were already signed in to AWS with your personal account)
+  
+  Your username in the top right should look something like this
   `vocstartsoft/user236529=lastname.number@wright.edu`.
-* Create a SSH key pair via AWS for signing in to your systems.  To do this
+
+This will launch the main AWS Console.  From here you can create resources such
+as networks, virtual machines, or a number of other services offered by AWS, but
+first you will need an SSH key pair so that you can sign in to these services
+once provisioned.
+
+* To create a SSH key pair via AWS for signing in to your systems
   select the [EC2 service from the AWS console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Home:).
   In the center area you should see a list of all Resources you have
   available (you will be returning here often).  Right now they should all be 0.
