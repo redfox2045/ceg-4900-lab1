@@ -1,5 +1,8 @@
 import socket
 
+# Code sample from https://nostarch.com/blackhatpython
+# Forked from https://github.com/WillPennell/Python
+
 target_host = "www.wright.edu"
 target_port = 80
 

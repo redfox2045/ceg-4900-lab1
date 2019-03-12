@@ -6,19 +6,6 @@ using for the remainder of the labs.  You should have received an email
 regarding your AWS Educate account for this class.  We will be using AWS to
 create virtual environments for you to use to complete the tasks given.
 
-### A Note on Ethics
-Much of the material in these labs could be used to gain access to a wide
-array of systems both on and off campus.  I would like to remind everyone
-that gaining access to such systems without permission would be a violation
-of Wright Way policy (and possibly several laws) which can be punishable up 
-to expulsion from the University (or a criminal suit being brought against
-the student.
-
-That being said we are here to learn, if you suspect/discover that a site 
-or server may be vulnerable please bring it up in class so that we can 
-discuss proper methods of requesting permission to perform a pen test and
-proper remediation.
-
 ### Objectives
 1. Become familiar with creating lab environments via AWS CloudFormation files
 3. Brush up on networking topics needed for this course including:
@@ -39,12 +26,17 @@ connection techniques such as tunnels, proxies, and reverse shells.
 ##### Resources
 * This Github repository (/code)
 * AWS Educate Environment
+  * **Important Note:**  This AWS environment only allows inbound access from the
+    following ports:
+    * 22
+    * 1025-2048
 
 ##### Setup
 * Register for an account at https://github.com/
 * Complete The AWS Educate Registration
-* Create a Fork of this repository so you have it for your records
 * Install Python 2.7, I recommend using [Anaconda Python](https://www.anaconda.com/distribution/)
+* Create a Fork of this repository so you have it for your records (and can
+  contribute back to make this project even better!)
 
 ###### Windows Only Setup
 We are going to be making many connections to linux servers via SSH, some will
@@ -231,5 +223,5 @@ connect to *Ubuntu Private* over SSH from your local machine.
 
 
 ### Acknowledgement
-Portions of this lab were derived from Black Hat Python: Python Programming for
-Hackers and Pentesters, by Justin Seitz.
+Portions of this lab were derived from [Black Hat Python: Python Programming for
+Hackers and Pentesters, by Justin Seitz](https://nostarch.com/blackhatpython).

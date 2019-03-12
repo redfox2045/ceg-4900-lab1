@@ -1,5 +1,9 @@
 #!/usr/bin/python2.7
 
+# Code sample from https://nostarch.com/blackhatpython
+# Forked from https://github.com/WillPennell/Python
+
+
 import sys
 import socket
 import threading

@@ -1,3 +1,7 @@
+# Code sample from https://nostarch.com/blackhatpython
+# Forked from https://github.com/WillPennell/Python
+
+
 import socket
 import threading
 
