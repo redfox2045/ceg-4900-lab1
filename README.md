@@ -70,9 +70,9 @@ Assuming you have registerd for AWS Educate and have access to this class
 perform the following:
 
 * [Sign in to AWS educate](https://www.awseducate.com/signin/SiteLogin),
-  * Click the yellow `*My Classrooms*` Button
-  * Click the blue `*Go to classroom*` button for *Cyber Security Analysis - Applied*
-  * Click the blue `*AWS Console*` button  
+  * Click the yellow `My Classrooms` Button
+  * Click the blue `Go to classroom` button for *Cyber Security Analysis - Applied*
+  * Click the blue `AWS Console` button  
   
   This will launch the AWS console (may require two
   clicks if you were already signed in to AWS with your personal account)
