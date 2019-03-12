@@ -1,7 +1,7 @@
 # Lab 1 - Making Connections...
 
 ### Introduction to the lab space
-The purpose of lab 0 is to familiarize yourself with the lab space we will be
+The purpose of lab 1 is to familiarize yourself with the lab space we will be
 using for the remainder of the labs.  You should have received an email
 regarding your AWS Educate account for this class.  We will be using AWS to
 create virtual environments for you to use to complete the tasks given.
