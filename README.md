@@ -8,11 +8,11 @@ create virtual environments for you to use to complete the tasks given.
 
 ### Objectives
 1. Become familiar with creating lab environments via AWS CloudFormation files
-3. Brush up on networking topics needed for this course including:
+2. Brush up on networking topics needed for this course including:
    * sockets
    * client/server model
    * tunnels/proxies
-2. Start building your git(hub) toolbox
+3. Start building your git(hub) toolbox
 
 ### Background
 There are all sorts of useful tools to scan, sniff, crawl, hack, crack, and
@@ -69,7 +69,7 @@ you faced.  Be sure to answer all questions asked.
 Assuming you have registerd for AWS Educate and have access to this class 
 perform the following:
 
-* [Sign in to AWS educate](https://www.awseducate.com/signin/SiteLogin),
+* [Sign in to AWS educate](https://www.awseducate.com/signin/SiteLogin)
   * Click the yellow `My Classrooms` Button
   * Click the blue `Go to classroom` button for *Cyber Security Analysis - Applied*
   * Click the blue `AWS Console` button  
@@ -202,9 +202,9 @@ installed with a `socket()` library (like python).
 Investigate the `code/bhpnet.py`, explain what it does.  Use `bhpnet.py` to
 create a bind shell.
 
-1. List the commands used to establish a reverse shell with `bhpnet.py` and how
+1. List the commands used to establish a bind shell with `bhpnet.py` and how
    to connect to it with `nc`.  
-2. Does this shell differ at all from the previous reverse shell you created?
+2. Does this shell differ at all from the previous bind shell you created?
    Why or why not?
 
 
